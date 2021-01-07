@@ -1,7 +1,12 @@
 For nexter project
 1. npm install (under nexter-project)
 2. npm run watch:sass (this will run and generate css/style.css according to script)
-8 parts of this website Home page layout
+3. git remote add orgin https://github.com/skhanam16/Grid-layout.git  (to your dev environment)
+4. git checkout -b <branchname>
+4. git push origin <branchname>
+5. git clone https://github.com/skhanam16/Grid-layout.git   (clone from remote)
+Website Home page layout
 Step one: Building the overall layout of the website
 1. adapt vh and adapt vw, min-content with the increase of content the row will grow. Auto is default if we do not specify anything.
 2. row start from the beginning and end at the bottom that is gird-row: 1 / -1
+
