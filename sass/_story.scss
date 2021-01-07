@@ -1,0 +1,11 @@
+.story{
+    &__pictures{
+        background-color: orangered;
+        grid-column: full-start/ col-start 5;
+    }
+
+    &__content{
+        background-color: palevioletred;
+        grid-column: col-start 5 / full-end;
+    }
+}
