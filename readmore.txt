@@ -1,4 +1,7 @@
 For nexter project
+git add remote <githubaddress>
+git fetch <githubaddress>
+git push origin <newbranchname> <githubaddress>
 1. npm install (under nexter-project)
 2. npm run watch:sass (this will run and generate css/style.css according to script)
 8 parts of this website Home page layout
