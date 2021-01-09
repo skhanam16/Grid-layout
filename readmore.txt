@@ -1,4 +1,11 @@
 For nexter project
+$ git fetch origin
+# Fetches updates made to an online repository
+$ git merge origin branch
+# Merges updates made online with your local work
+git add remote <githubaddress>
+git fetch <githubaddress>
+git push origin <newbranchname> <githubaddress>
 1. npm install (under nexter-project)
 2. npm run watch:sass (this will run and generate css/style.css according to script)
 3. git remote add orgin https://github.com/skhanam16/Grid-layout.git  (to your dev environment)
