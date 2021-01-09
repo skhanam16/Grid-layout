@@ -1,4 +1,8 @@
 For nexter project
+$ git fetch origin
+# Fetches updates made to an online repository
+$ git merge origin branch
+# Merges updates made online with your local work
 git add remote <githubaddress>
 git fetch <githubaddress>
 git push origin <newbranchname> <githubaddress>
