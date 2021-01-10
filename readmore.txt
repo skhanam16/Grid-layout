@@ -21,7 +21,7 @@ git push origin <newbranchname> <githubaddress>
 Step one: Building the overall layout of the website
 1. adapt vh and adapt vw, min-content with the increase of content the row will grow. Auto is default if we do not specify anything.
 2. row start from the beginning and end at the bottom that is gird-row: 1 / -1  ***-1 only works with explicit grid not works with implicit grid.
-Feature parts------
+ *** Feature parts------
 1. **How and why to create grids inside of grids
 2. **How to create responsive component without media queries
 3. **How to build a small component using css grids
