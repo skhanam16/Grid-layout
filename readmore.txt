@@ -1,4 +1,13 @@
 For nexter project
+1. First row is the height of view port height units
+2. When content grow the row will also grow. that is the min-content. that means there will be enough space to fit all the content. Auto also the same. Rows adapt to the content.
+3. view port width- as the size of the view port width decrease the size of the view-port. We want to decrease the size of elements. That means adapting with the view-port.
+4. use of units not px. vh, vw are really important units in real world scenerio.
+6. 8 column grid system
+7. 1240px width divided by 8 column = 155px 
+8. min-max(min-content, 15.5rem)); ---max will be 15.5rem but never below min-content
+9. repeat(8, min-max(min-content, 15.5rem)); - I want 8 column and each column will be between min-content and 15.5rem
+10. minmax(6rem, 1fr); means always keep 6 rem min-size and max 1fr (1fr is just occupy the rest of the space)
 $ git fetch origin
 # Fetches updates made to an online repository
 $ git merge origin branch
@@ -11,4 +20,34 @@ git push origin <newbranchname> <githubaddress>
 8 parts of this website Home page layout
 Step one: Building the overall layout of the website
 1. adapt vh and adapt vw, min-content with the increase of content the row will grow. Auto is default if we do not specify anything.
-2. row start from the beginning and end at the bottom that is gird-row: 1 / -1
+2. row start from the beginning and end at the bottom that is gird-row: 1 / -1  ***-1 only works with explicit grid not works with implicit grid.
+Feature parts------
+1. **How and why to create grids inside of grids
+2. **How to create responsive component without media queries
+3. **How to build a small component using css grids
+4. .feature{feature $}*6
+5. features (section) elements is a grid item. Now we want this grid item to also be a grid container. Just the same thing as we have in flexbox.
+6. all we have to do is to write display
+7. the placeholder in sass
+%heading{
+
+    font-family: $font-display;
+    font-weight: 400;
+}
+
+8.  @extend %heading;
+9. two dimenssion axis: row axis, column axis.
+10. 2 by 2 grid.
+11. We can nest the grid really deep
+12. min-content and 2nd column will occupy the rest of the space
+13. -1 will only works with explycit grid
+14. Align items is the property that control the alignment of grid items along grid cells. Align items property by default is set to stretch. 
+15. We just need to set the alignment item property on the parent containers to start.
+16. align-items: start, end, center
+17. How to deal with overlapping grid items?
+18. Why images are special and behave differently other grid items?
+19. How to decide if flexbox is a better tool in certain situations?
+
+
+
+
