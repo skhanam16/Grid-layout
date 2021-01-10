@@ -44,6 +44,7 @@ Step one: Building the overall layout of the website
 14. Align items is the property that control the alignment of grid items along grid cells. Align items property by default is set to stretch. 
 15. We just need to set the alignment item property on the parent containers to start.
 16. align-items: start, end, center
+Styling Story section
 17. How to deal with overlapping grid items?
 18. Why images are special and behave differently other grid items?
 19. How to decide if flexbox is a better tool in certain situations?
