@@ -1,4 +1,42 @@
 .features{
     background-color: rosybrown;
     grid-column: center-start/center-end;
+
+    margin: 12rem 0; // this will separete the feature section from other sections
+
+    display: grid; // grid for section features
+    //grid-template-columns: repeat(3, 1fr); // witll make three columns
+    //to make this section responsive we need repeat autofit it creates many tract to fit based on the define width
+    //will say the width always stay between 25rem and 1fr unit
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 60px; // add space beteen colums and rows
+    align-items: start;;
+    
+    
+}
+// style each grid cell icon and text
+
+.feature{
+    
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 1.5rem;
+
+    &__icon{
+    // fill property use to change icon colour
+    fill: brown;
+    width: 4.5rem;
+    height: 4.5rem;
+    // make this icon row all the way down -1 will only work with explecit grid
+    grid-row: 1 / span 2;
+    // translate the icon bit from the top;
+    transform: translateY(-1rem);
+
+
+    }
+    
+    &__text{
+        font-size: 1.7rem ;
+    }
 }
