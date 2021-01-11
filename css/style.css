@@ -35,7 +35,7 @@ body {
 
 .heading-3 {
   font-size: 1.6rem;
-  color: brown;
+  color: #a8600d;
   text-transform: uppercase; }
 
 .heading-4 {
@@ -46,7 +46,7 @@ body {
     color: #54483A; }
 
 .btn {
-  background-color: brown;
+  background-color: #a8600d;
   color: #fff;
   border: none;
   border-radius: 0;
@@ -55,12 +55,24 @@ body {
   text-transform: uppercase;
   padding: 1.8rem 3rem;
   cursor: pointer;
-  transform: all .2s; }
+  transition: all .2s; }
   .btn:hover {
     background-color: #B28451; }
 
+.mb-sm {
+  margin-bottom: 2rem; }
+
+.mb-md {
+  margin-bottom: 3rem; }
+
+.mb-lg {
+  margin-bottom: 4rem; }
+
+.mb-elg {
+  margin-bottom: 8rem; }
+
 .sidebar {
-  background-color: brown;
+  background-color: #a8600d;
   grid-row: 1 / -1; }
 
 .header {
@@ -96,16 +108,44 @@ body {
 
 .story__pictures {
   background-color: orangered;
-  grid-column: full-start/ col-start 5; }
+  grid-column: full-start / col-start 5;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  background-image: url(../img/back.jpg);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.story__img--1 {
+  width: 100%;
+  grid-row: 2 / 6;
+  grid-column: 2 /6; }
+
+.story__img--2 {
+  width: 110%;
+  grid-row: 4 / 6;
+  grid-column: 4 / 7;
+  z-index: 20; }
 
 .story__content {
   background-color: palevioletred;
   grid-column: col-start 5 / full-end;
-  padding: 6rem 15rem; }
+  padding: 6rem 8vh;
+  /*
+        display: flex;
+        flex-direction: column;
+        justify-content: center; // how do we now center all items under flex across the main-axis?
+        align-items: flex-start; //align items property by default set to stretch. Make it flex-start
+        */
+  display: grid;
+  align-content: flex-start;
+  justify-items: start; }
 
 .story__text {
   font-size: 1.5rem;
-  font-style: italic; }
+  font-style: italic;
+  margin-bottom: 4rem; }
 
 .homes {
   background-color: rebeccapurple;

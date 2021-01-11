@@ -45,14 +45,20 @@
     background-color: $color-primary;
     color: #fff;
     border: none;
-    border-radius: 0;
+    border-radius: 0; // by default it has some radius. so make it 0
     font-family: $font-display;
     font-size: 1.5rem;
     text-transform: uppercase;
     padding: 1.8rem 3rem;
     cursor: pointer;
-    transform: all .2s;
+    transition: all .2s;
     &:hover{
         background-color: $color-primary-dark;
     }
 }
+
+// helper class mb-sm (margin-bottom small). This also called atomic css
+.mb-sm{ margin-bottom: 2rem; }
+.mb-md{ margin-bottom: 3rem; }
+.mb-lg{ margin-bottom: 4rem; }
+.mb-elg{ margin-bottom: 8rem; }

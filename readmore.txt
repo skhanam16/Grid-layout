@@ -48,6 +48,10 @@ Styling Story section
 17. How to deal with overlapping grid items?
 18. Why images are special and behave differently other grid items?
 19. How to decide if flexbox is a better tool in certain situations?
+main-axis is going from top to down
+cross-axis is going from left to right
+
+20. background image, center image, and image on the top. Overlapping image
 
 
 
