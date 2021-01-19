@@ -2,10 +2,61 @@
     &__pictures{
         background-color: orangered;
         grid-column: full-start/ col-start 5;
+        background-image: url(../img/back.jpg);
+
+        //now turn this container into a grid container
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+        // this property position the image in the center
+        align-items: center;
+    }
+
+    &__img--1{
+        //the 100% width of the parent width
+      width: 100%;
+      // start from 2 row and end at 6 row
+      grid-row: 2 /6;
+      // start at 2 row and end at 6 row
+      grid-column: 2/6;
+    }
+
+    &__img--2{
+        // if we change the width from 100 to 115% then it will expand the image
+        width: 115%;
+        // from row 4 to 6
+        grid-row: 4/ 6;
+        // from column 4 to 7
+        grid-column: 4/7 ;
+        
+        z-index: 10;
+        //we can add background-shawdow
+        
     }
 
     &__content{
         background-color: palevioletred;
         grid-column: col-start 5 / full-end;
+        //instead of using 6rem left-right padding we can use percentange of view-port width;
+        padding: 6rem 8vw;
+        /*
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        */
+
+        display: grid;
+        align-content: center;
+        justify-items: start;
+
+    }
+
+    &__text{
+
+        font-size: 1.5rem;
+        font-style: italic;
+        margin-bottom: 4rem;
+
     }
 }
